@@ -52,7 +52,7 @@ public class TaskTrackerCliApplication implements CommandLineRunner {
             try {
                 switch (action) {
                     case "add":
-                        String desc = parts[1].split("\"")[0];
+                        String desc = parts[1].split("\"")[1];
                         Task task = new Task();
                         task.setDescription(desc);
                         task.setStatus(Status.todo.toString());
